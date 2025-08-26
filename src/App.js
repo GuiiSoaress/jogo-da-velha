@@ -3,11 +3,12 @@
 import './App.css';
 import {useState} from 'react';
 
-function Square(){
+function Square({valor, onSquareClick}){
   const [valor, setValor] = useState(null);
 
   function handleClick(){
-    setValor('X')
+    <button className='square' onlclick{onSquareClick}
+          {valor}
   }
   return (
     <button classeName="square" onClick={handleClick}>{valor}</button>

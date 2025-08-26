@@ -7,8 +7,9 @@ function Square({valor, onSquareClick}){
   const [valor, setValor] = useState(null);
 
   function handleClick(){
-    <button className='square' onlclick{onSquareClick}
+    <button className="square" onClick={onSquareClick}>
           {valor}
+    </button>
   }
   return (
     <button classeName="square" onClick={handleClick}>{valor}</button>
@@ -16,10 +17,16 @@ function Square({valor, onSquareClick}){
 }
 
 export default function Tabuleiro(){
+  const [square, setSquares] = useState(Array(9).fill(null));
+
+  function handleClick(i){
+    const nextSquares = setSquares.slice();
+    nextSquares[i] = "X"
+  }
   return (
     <div>
     <div>
-    <Square valor = "1"/>
+    <Square valor = "squares[0]"/>
     <Square valor = "2"/>
     <Square valor = "3"/>
     </div>

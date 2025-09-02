@@ -1,5 +1,6 @@
 .square{
   font-size: medium;
   color: blue; 
-  height: 50%;
+  height: 50px;
+  width: 50px;
 }

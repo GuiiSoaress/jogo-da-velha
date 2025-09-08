@@ -1,6 +1,52 @@
-.square{
-  font-size: medium;
+
+.game {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  align-items:center ;
+}
+
+
+.game-info {
+  margin-left: 20px; 
+}
+.game-info ol {
+  padding-left: 20px; 
+}
+
+.game-info li {
+  margin-bottom: 5px; 
+}
+
+
+.board {
+display: flex;
+flex-direction: column;
+}
+
+
+
+.status {
+  margin-bottom: 10px; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #999; 
+  margin-right: -1px; 
+  margin-top: -1px;
+  
+  font-size: 24px; 
+  font-weight: bold;
   color: blue; 
-  height: 50px;
-  width: 50px;
+
+
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
 }
